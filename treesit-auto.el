@@ -90,7 +90,8 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :lang 'bibtex
       :ts-mode 'bibtex-ts-mode
       :remap 'bibtex-mode
-      :url "https://github.com/latex-lsp/tree-sitter-bibtex"
+      :url "https://github.com/manphiz/tree-sitter-bibtex"
+      :abi14-revision "last-abi-14"
       :ext "\\.bib\\'")
     ,(make-treesit-auto-recipe
       :lang 'blueprint
@@ -103,6 +104,7 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :ts-mode 'c-ts-mode
       :remap 'c-mode
       :url "https://github.com/tree-sitter/tree-sitter-c"
+      :abi14-revision "v0.23.1"
       :requires 'cpp
       :ext "\\.c\\'")
     ,(make-treesit-auto-recipe
@@ -110,6 +112,7 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :ts-mode 'csharp-ts-mode
       :remap 'csharp-mode
       :url "https://github.com/tree-sitter/tree-sitter-c-sharp"
+      :abi14-revision "v0.21.3"
       :ext "\\.cs\\'")
     ,(make-treesit-auto-recipe
       :lang 'clojure
@@ -124,7 +127,7 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :url "https://github.com/uyha/tree-sitter-cmake"
       :ext "\\.cmake\\'")
     ,(make-treesit-auto-recipe
-      :lang 'cobol
+      :lang 'COBOL
       :ts-mode 'cobol-ts-mode
       :remap 'cobol-mode
       :url "https://github.com/yutaro-sakamoto/tree-sitter-cobol"
@@ -148,12 +151,14 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :ts-mode 'css-ts-mode
       :remap 'css-mode
       :url "https://github.com/tree-sitter/tree-sitter-css"
+      :abi14-revision "v0.21.1"
       :ext "\\.css\\'")
     ,(make-treesit-auto-recipe
       :lang 'dart
       :ts-mode 'dart-ts-mode
       :remap 'dart-mode
-      :url "https://github.com/UserNobody14/tree-sitter-dart"
+      :url "https://github.com/manphiz/tree-sitter-dart"
+      :abi14-revision "last-abi-14"
       :ext "\\.dart\\'")
     ,(make-treesit-auto-recipe
       :lang 'dockerfile
@@ -172,6 +177,7 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :lang 'gitcommit
       :ts-mode 'git-commit-ts-mode
       :url "https://github.com/gbprod/tree-sitter-gitcommit"
+      :abi14-revision "v0.3.3"
       :ext "\\COMMIT_EDITMSG\\'")
     ,(make-treesit-auto-recipe
       :lang 'glsl
@@ -211,6 +217,7 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :ts-mode 'heex-ts-mode
       :remap 'heex-mode
       :url "https://github.com/phoenixframework/tree-sitter-heex"
+      :abi14-revision "v0.6.0"
       :ext "\\.heex\\'")
     ,(make-treesit-auto-recipe
       :lang 'html
@@ -222,6 +229,7 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :lang 'hyprlang
       :ts-mode 'hyprlang-ts-mode
       :url "https://github.com/tree-sitter-grammars/tree-sitter-hyprlang"
+      :abi14-revision "v2.0.0"
       :ext "/hypr/.*\\.conf\\'")
     ,(make-treesit-auto-recipe
       :lang 'janet-simple
@@ -240,6 +248,7 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :ts-mode 'js-ts-mode
       :remap '(js-mode javascript-mode js2-mode)
       :url "https://github.com/tree-sitter/tree-sitter-javascript"
+      :abi14-revision "v0.21.4"
       :revision "master"
       :source-dir "src"
       :ext "\\.js\\'")
@@ -254,6 +263,7 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :ts-mode 'julia-ts-mode
       :remap 'julia-mode
       :url "https://github.com/tree-sitter/tree-sitter-julia"
+      :abi14-revision "v0.23.1"
       :ext "\\.jl\\'")
     ,(make-treesit-auto-recipe
       :lang 'kotlin
@@ -266,24 +276,28 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :ts-mode 'lua-ts-mode
       :remap 'lua-mode
       :url "https://github.com/tree-sitter-grammars/tree-sitter-lua"
+      :abi14-revision "v0.3.0"
       :ext "\\.lua\\'")
     ,(make-treesit-auto-recipe
       :lang 'magik
       :ts-mode 'magik-ts-mode
       :remap 'magik-mode
       :url "https://github.com/krn-robin/tree-sitter-magik"
+      :abi14-revision "0.0.1"
       :ext "\\.magik\\'")
     ,(make-treesit-auto-recipe
       :lang 'make
       :ts-mode 'makefile-ts-mode
       :remap 'makefile-mode
       :url "https://github.com/tree-sitter-grammars/tree-sitter-make"
+      :abi14-revision "v1.1.1"
       :ext "\\([Mm]akefile\\|.*\\.\\(mk\\|make\\)\\)\\'")
     ,(make-treesit-auto-recipe
       :lang 'markdown
       :ts-mode 'markdown-ts-mode
       :remap '(poly-markdown-mode markdown-mode)
       :url "https://github.com/tree-sitter-grammars/tree-sitter-markdown"
+      :abi14-revision "v0.3.2"
       :source-dir "tree-sitter-markdown/src"
       :ext "\\.md\\'")
     ,(make-treesit-auto-recipe
@@ -296,7 +310,8 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :lang 'nu
       :ts-mode 'nushell-ts-mode
       :remap 'nushell-mode
-      :url "https://github.com/nushell/tree-sitter-nu"
+      :url "https://github.com/manphiz/tree-sitter-nu"
+      :abi14-revision "last-abi-14"
       :ext "\\.nu\\'")
     ,(make-treesit-auto-recipe
       :lang 'org
@@ -309,6 +324,7 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :ts-mode 'perl-ts-mode
       :remap 'perl-mode
       :url "https://github.com/ganezdragon/tree-sitter-perl"
+      :abi14-revision "v1.1.1"
       :ext "\\.pl\\'")
     ,(make-treesit-auto-recipe
       :lang 'php
@@ -316,6 +332,7 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :remap 'php-mode
       :url "https://github.com/tree-sitter/tree-sitter-php"
       :source-dir "php/src"
+      :abi14-revision "v0.23.12"
       :ext "\\.php\\'")
     ,(make-treesit-auto-recipe
       :lang 'proto
@@ -347,25 +364,29 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :ts-mode 'rust-ts-mode
       :remap 'rust-mode
       :url "https://github.com/tree-sitter/tree-sitter-rust"
+      :abi14-revision "v0.23.3"
       :ext "\\.rs\\'")
     ,(make-treesit-auto-recipe
       :lang 'scala
       :ts-mode 'scala-ts-mode
       :remap 'scala-mode
       :url "https://github.com/tree-sitter/tree-sitter-scala"
+      :abi14-revision "v0.23.4"
       :ext "\\.\\(scala\\|sbt\\)\\'")
     ,(make-treesit-auto-recipe
       :lang 'solidity
       :ts-mode 'solidity-ts-mode
       :remap 'solidity-mode
       :url "https://github.com/JoranHonig/tree-sitter-solidity"
+      :abi14-revision "v1.2.10"
       :ext "\\.sol\\'")
     ,(make-treesit-auto-recipe
       :lang 'sql
       :ts-mode 'sql-ts-mode
       :remap 'sql-mode
       :revision "gh-pages"
-      :url "https://github.com/DerekStride/tree-sitter-sql"
+      :url "https://github.com/manphiz/tree-sitter-sql"
+      :abi14-revision "last-abi-14"
       :ext "\\.sql\\'")
     ,(make-treesit-auto-recipe
       :lang 'surface
@@ -376,7 +397,8 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :lang 'swift
       :ts-mode 'swift-ts-mode
       :remap 'swift-mode
-      :url "https://github.com/alex-pinkus/tree-sitter-swift")
+      :url "https://github.com/alex-pinkus/tree-sitter-swift"
+      :revision "with-generated-files")
     ,(make-treesit-auto-recipe
       :lang 'toml
       :ts-mode 'toml-ts-mode
@@ -404,7 +426,8 @@ by manipulating the `treesit-auto-recipe-list' variable."
     ,(make-treesit-auto-recipe
       :lang 'typespec
       :ts-mode 'typespec-ts-mode
-      :url "https://github.com/happenslol/tree-sitter-typespec/"
+      :url "https://github.com/manphiz/tree-sitter-typespec"
+      :abi14-revision "last-abi-14"
       :revision "main"
       :source-dir "src"
       :ext "\\.tsp\\'")
@@ -417,10 +440,13 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :source-dir "src"
       :ext "\\.typ\\'")
     ,(make-treesit-auto-recipe
-      :lang 'verilog
+      :lang (if (< (treesit-library-abi-version) 15)
+                'verilog
+              'systemverilog)
       :ts-mode 'verilog-ts-mode
       :remap 'verilog-mode
-      :url "https://github.com/gmlarumbe/tree-sitter-systemverilog"
+      :url "https://github.com/manphiz/tree-sitter-systemverilog"
+      :abi14-revision "last-abi-14"
       :ext "\\.s?vh?\\'")
     ,(make-treesit-auto-recipe
       :lang 'vhdl
@@ -432,7 +458,8 @@ by manipulating the `treesit-auto-recipe-list' variable."
       :lang 'vue
       :ts-mode 'vue-ts-mode
       :remap 'vue-mode
-      :url "https://github.com/tree-sitter-grammars/tree-sitter-vue"
+      :url "https://github.com/manphiz/tree-sitter-vue"
+      :abi14-revision "last-abi-14"
       :ext "\\.vue\\'")
     ,(make-treesit-auto-recipe
       :lang 'wast
